@@ -58,10 +58,28 @@ body{
     display: flex;
     justify-content: space-around;
     align-items: center;
+    z-index: 999;
 }
 .socialmedia i{
-    font-size: 40px;
+    font-size: 35px;
     color: white;
+    z-index: 999;
+    padding: 10px;
+    cursor: pointer;
+    transition: .5s ease-in-out all;
+}
+.socialmedia .fa-twitter:hover{
+    background-color: #00acee;
+    padding: 10px;
+}
+.socialmedia .fa-github:hover{
+    padding: 10px;
+    color: #171515;
+    background-color: white;
+}
+.socialmedia .fa-eye:hover{
+    background-color: #171515;
+    padding: 10px;
 }
 .text{
     width: fit-content;
@@ -115,7 +133,7 @@ body{
     align-items: center;
     padding-top: 30px;
 }
-.dowload .button{
+.dowload .link-button , .button{
     color: #c10404;
     background-color: white;
     width: 200px;
@@ -126,6 +144,7 @@ body{
     position: absolute;
     z-index: 999;
     transition: ease all 0.5s;
+    cursor: pointer;
 }
 .dowload .button:hover{
     color: white;
@@ -180,9 +199,11 @@ body{
     font-size: 25px;
     padding-top: 10px;
     padding-bottom: 10px;
+    font-family: 'Lora', serif;
 }
 .ventajas div p{
     font-size: 18px;
+    font-family: 'Lora', serif;
 }
 .opiniones{
     height: fit-content;
