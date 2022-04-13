@@ -43,15 +43,15 @@ body{
     color: white;
 }
 .title h1{
-    font-size: 60px;
+    font-size: 6rem;
     width: 100%;
     font-family: 'Lora', serif;
 }
 .title p , .title span{
-    font-size: 25px;
+    font-size: 2.5rem;
     font-family: 'Lora', serif;
 }
-.socialmedia{
+.socialmedia1{
     width: 300px;
     padding-bottom: 20px;
     height: fit-content;
@@ -60,24 +60,27 @@ body{
     align-items: center;
     z-index: 999;
 }
-.socialmedia i{
-    font-size: 35px;
+.socialmedia2{
+    display: none;
+}
+.socialmedia1 i{
+    font-size: 3.5rem;
     color: white;
     z-index: 999;
     padding: 10px;
     cursor: pointer;
     transition: .5s ease-in-out all;
 }
-.socialmedia .fa-twitter:hover{
+.socialmedia1 .fa-twitter:hover{
     background-color: #00acee;
     padding: 10px;
 }
-.socialmedia .fa-github:hover{
+.socialmedia1 .fa-github:hover{
     padding: 10px;
     color: #171515;
     background-color: white;
 }
-.socialmedia .fa-eye:hover{
+.socialmedia1 .fa-eye:hover{
     background-color: #171515;
     padding: 10px;
 }
@@ -140,7 +143,7 @@ body{
     height: 40px;
     border: none;
     border-radius: 50px;
-    font-size: 20px;
+    font-size: 2rem;
     position: absolute;
     z-index: 999;
     transition: ease all 0.5s;
@@ -164,7 +167,7 @@ body{
     justify-content: center;
 }
 .ventajas-title{
-    font-size: 50px;
+    font-size: 5rem;
     height: fit-content;
     color: white;
     text-align: center;
@@ -192,17 +195,17 @@ body{
     justify-content: space-around;
 }
 .ventajas i{
-    font-size: 30px;
+    font-size: 3rem;
     color: #c10404;
 }
 .ventajas div h2{
-    font-size: 25px;
+    font-size: 2.5rem;
     padding-top: 10px;
     padding-bottom: 10px;
     font-family: 'Lora', serif;
 }
 .ventajas div p{
-    font-size: 18px;
+    font-size: 1.8rem;
     text-align: justify;
     font-family: 'Lora', serif;
 }
@@ -220,7 +223,7 @@ body{
     font-family: 'Lora', serif;
     width: 100%;
     text-align: center;
-    font-size: 50px;
+    font-size: 5rem;
     padding: 20px;
 }
 .opiniones div{
@@ -254,8 +257,8 @@ body{
     width: 100%;
     height: 100%;
 }
-.opiniones label{
-    font-size: 15px;
+.opiniones label a{
+    font-size: 1.5rem;
     font-family: 'Lora', serif;
     color: #c10404;
 }
@@ -276,35 +279,49 @@ i{
 }
 .bajo p {
     color: white;
-    font-size: 20px;
+    font-size: 2rem;
     font-family: 'Lora', serif;
 }
 .bajo span{
     color: gainsboro;
-    font-size: 25px;
+    font-size: 2.5rem;
     font-weight: bolder;
     font-family: 'Lora', serif;
 }
 @media only screen and (max-width : 900px) {
+    *{
+        font-size: 6px;
+    }
     .title{
         width: 100%;
     }
     .title h1{
-        font-size: 45px;
+        font-size: 4.5rem;
     }
     .text{
         padding: 0px;
         margin: 0px;
+        width: 100%;
     }
-    .text h2{
-        font-size: 45px;
-        padding-left: 50px;
-        padding-right: 50px;
+    .letter-container{
+        width: 100%;
     }
-    .text p{
-        padding-left: 50px;
-        padding-right: 50px;
-        font-size: 20px;
+    .letter-container h2{
+        height: fit-content;
+        width: 100%;
+        font-size: 4.5rem;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .letter-container p{
+        width: 100%;
+        font-size: 2rem;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .letter-container .dowload{
+        padding: 0px;
+        width: 100%;
     }
     .mockup2{
         width: 600px;
@@ -316,8 +333,87 @@ i{
     }
     .ventajas{
         height: 100vh;
+        justify-content: space-;
+    }
+    .ventajas div{
+        padding-top: 0px;
+        padding-bottom: 0px;
+        height: fit-content;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .ventajas h2{
+        padding-bottom: 40px;
     }
     .opiniones{
-        height: 100vh;
+        height: fit-content;
     }
+    }
+    .opiniones label a{
+        font-size: 2rem;
+        text-decoration: none;
+    }
+    @media only screen and (max-height : 500px){
+        .text{
+            display: flex;
+            flex-direction: row;
+            height: auto;
+            z-index: 999;
+        }
+        .text p{
+            padding-right: 20px;
+        }
+        .mockup-container{
+            width: fit-content;
+            height: fit-content;
+        }
+        .text .mockup2{
+            width: 450px;
+            height: 250px;
+        }
+        .socialmedia1{
+            display: none;
+        }
+        .socialmedia2{
+            width: 300px;
+            padding-bottom: 20px;
+            height: fit-content;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: auto;
+            z-index: 999;
+        }
+        .socialmedia2 i{
+            font-size: 3.5rem;
+            color: white;
+            z-index: 999;
+            padding: 10px;
+            cursor: pointer;
+            transition: .5s ease-in-out all;
+        }
+        .socialmedia2 .fa-twitter:hover{
+            background-color: #00acee;
+            padding: 10px;
+        }
+        .socialmedia2 .fa-github:hover{
+            padding: 10px;
+            color: #171515;
+            background-color: white;
+        }
+        .socialmedia2zzzzzzzz .fa-eye:hover{
+            background-color: #171515;
+            padding: 10px;
+        }
+        .ventajas{
+            height: auto;
+        }
+        .ventajas .ventajas-title{
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+        .opiniones label a{
+            font-size: 2rem;
+            text-decoration: none;
+        }
     }
