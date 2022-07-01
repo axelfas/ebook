@@ -1,287 +1,217 @@
 *{
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --firstcolor: #c10404;
+    --secondcolor: #ffff;
+}
+html{
     font-size: 10px;
+    font-family: 'Montserrat', sans-serif;
 }
-body{
-    position: relative;
-    background-color: white;
+h1 , h2{
+    font-family: 'Lobster', cursive;
 }
-.containerup{
+.firstvh{
+    background-image: linear-gradient(rgba(193, 4, 4 , 0.85), rgba(193, 4, 4 , 0.85)), url(fondocanva.png);
+    background-size: cover;
     width: 100%;
     min-height: 100vh;
-    max-height: fit-content;
-    background-color: #c10404;
-    overflow: hidden;
-    position: relative;
+    height: fit-content;
+    display: flex;
+}
+.limit{
+    width: 100%;
+    min-height: 100vh;
+    max-width: 2000px;
+    margin-left: auto;
+    margin-right: auto;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-}
-.bg{
-    opacity: 0.1;
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-repeat: repeat;
+    justify-content: space-around;
 }
 .title{
-    top: 0;
-    width: fit-content;
-    height: 160px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-.title__content{
-    text-align: center;
-    padding-top: 20px;
-    color: white;
-}
-.title h1{
-    font-size: 6rem;
+    color: var(--secondcolor);
     width: 100%;
-    font-family: 'Lora', serif;
-}
-.title p , .title span{
-    font-size: 2.5rem;
-    font-family: 'Lora', serif;
-}
-.socialmedia1{
-    width: 300px;
-    padding-bottom: 20px;
     height: fit-content;
-    display: flex;
-    justify-content: space-around;
+    padding: 20px 20px 0px 10px;
     align-items: center;
-    z-index: 999;
 }
-.socialmedia2{
-    display: none;
+.title__principal{
+    font-size: 2.8rem;
+    text-align: center;
 }
-.socialmedia1 i{
-    font-size: 3.5rem;
-    color: white;
-    z-index: 999;
-    padding: 10px;
-    cursor: pointer;
-    transition: .5s ease-in-out all;
+.title__second{
+    font-size: 1.8rem;
+    text-align: center;
 }
-.socialmedia1 .fa-twitter:hover{
-    background-color: #00acee;
-    padding: 10px;
+.title span{
+    font-family: 'Lobster', cursive;
 }
-.socialmedia1 .fa-github:hover{
-    padding: 10px;
-    color: #171515;
-    background-color: white;
-}
-.socialmedia1 .fa-eye:hover{
-    background-color: #171515;
-    padding: 10px;
-}
-.text{
+.middlecontainer{
     width: 100%;
     height: 70%;
+    justify-content: center;
     display: flex;
-    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.mockup__container{
     width: 100%;
-    justify-content: space-around;
-    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1150px;
 }
-.text h2{
-    display: inline-block;;
-    font-size: 6rem;
-    color: white;
-    height: 90px;
-    width: 500px ;
+.mockup{
+    width: 100%;
+}
+.info{
+    color: var(--secondcolor);
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: 800px;
+    padding: 0px 20px 0px 20px;
     display: flex;
-    align-items: flex-end;
-    font-family: 'Lora', serif;
-}
-.text p {
-    text-align: justify;  
-    font-size: 2rem; 
-    width: 500px; 
-    font-family: 'Lora', serif;
-    display: inline-block;
-    color: white;
-}
-.letter-container{
-    width: 50%;
-    height: 100%;
     flex-direction: column;
-    display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: flex-start;
 }
-.letter-container .presentation .name{
+.info h2{
+    width: 100%;
     font-size: 2.5rem;
-    font-weight: bold;
 }
-.mockup-container{
-    width: 50%;
-    margin-right: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.info p{
+    font-size: 1.5rem;
 }
-.mockup2{
-    display: none;
-}
-.mockup1{
-    width: 800px;
-    height: auto;
-}
-.dowload{
-    width: 500px;
-    height: 80px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 30px;
-}
-.dowload .link-button , .button{
-    color: #c10404;
-    background-color: white;
-    width: 200px;
-    height: 40px;
+.info input{
+    width: fit-content;
+    padding: 5px 40px;
+    font-size: 1.8rem;
+    border-radius: 15px;
     border: none;
-    border-radius: 50px;
-    font-size: 2rem;
-    position: absolute;
-    z-index: 999;
-    transition: ease all 0.5s;
+    margin-top: 20px;
+    color: var(--firstcolor);
+    transition: 0.5s;
     cursor: pointer;
 }
-.dowload .button:hover{
-    color: white;
-    background-color: #c10404;
-    font-weight: bolder;
-    border: white 1px solid;
-}
-.containerdown{
-    height: auto;
-}
-.ventajas{
-    width: 100%;
-    height: fit-content;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-.ventajas-title{
-    font-size: 5rem;
-    height: fit-content;
-    color: white;
-    text-align: center;
-    width: 100%;
-    padding: 20px;
-    color: #c10404;
-    font-family: 'Lora', serif;
-}
-.ventajas article{
-    width: 100%;
-    height: fit-content;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: center;
-}
 
-.ventajas div{
-    color: black;
-    width: 350px;
-    height: fit-content;
-    padding: 30px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-}
-.ventajas i{
-    font-size: 3rem;
-    color: #c10404;
-}
-.ventajas div h2{
-    font-size: 2.5rem;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    font-family: 'Lora', serif;
-}
-.ventajas div p{
-    font-size: 1.8rem;
-    text-align: justify;
-    font-family: 'Lora', serif;
-}
-.opiniones{
-    height: fit-content;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-}
-.opiniones .testimonios{
-    color: #c10404;
-    font-family: 'Lora', serif;
-    width: 100%;
-    text-align: center;
-    font-size: 5rem;
-    padding: 20px;
-}
-.opiniones div{
-    padding: 20px;
-}
-.opiniones div img{
-    border-radius: 20px;
+.info input:hover{
+    background-color: var(--firstcolor);
+    color: var(--secondcolor);
     border: 1px solid white;
+    font-weight: bolder;
 }
-.opinion1{
-    width: 500px;
+.socialmedia{
+    width: 100%;
+    height: 16%;
+    display: flex;
+    text-align: center;
+    align-items: flex-end;
+    justify-content: center;
+    padding-top: 5px;
+}
+.socialmedia i{
+    font-size: 3rem;
+    color: var(--secondcolor);
+    margin: 20px 40px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.socialmedia .github:hover{
+    color: #171515;
+}
+.socialmedia .twitter:hover{
+    color: #00acee;
+}
+.socialmedia .pago:hover{
+    color: black;
+}
+.secondvh{
+    width: 100%;
     height: fit-content;
-}
-.opinion1 img{
-    width: 100%;
-    height: auto;
-}
-.opinion2{
-    width: 400px;
-    height: 380px;
-}
-.opinion2 img{
-    width: 100%;
-    height: 100%;
-}
-.opinion3{
-    height: 200px;
-    width: 500px;
-}
-.opinion3 img {
-    width: 100%;
-    height: 100%;
-}
-.opiniones label a{
-    font-size: 1.5rem;
-    font-family: 'Lora', serif;
-    color: #c10404;
-}
-i{
-    padding: 5px;
-    width: fit-content;
-    height: fit-content;
-    border-radius: 50%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
+.ventajas__title{
+    margin-top: 30px;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    color: var(--firstcolor);
+    font-size: 2.8rem;
+}
+.secondvh article{
+    width: 100%;
+    max-width: 1800px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.secondvh article div{
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    width: 100%;
+    max-width: 400px;
+}
+.secondvh article div i{
+    padding: 10px 0px;
+    font-size: 2rem;
+    color: var(--firstcolor);
+}
+.secondvh article div h2{
+    font-weight: bolder;
+    color: var(--firstcolor);
+    padding: 0px 0px 5px 0px;
+    font-size: 2rem;
+}
+.secondvh article div p{
+    font-size: 1.5rem;
+    text-align: justify;
+}
+.thirdvh{
+    height: fit-content;
+    min-height: 100vh;
+    width: 100%;
+    background-color: var(--firstcolor);
+}
+.thirdvh h2{
+    width: 100%;
+    text-align: center;
+    padding: 50px 0px 40px 0px;
+    font-size: 2.8rem;
+    color: var(--secondcolor);
+}
+.thirdvh article{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    right: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    /* max-width: 1800px; */
+}
+.thirdvh figure{
+    width: 300px;
+    min-width: fit-content;
+    padding: 20px;
+    border-radius: 20px;
+}
+.thirdvh figure img{
+    width: 100%;
+    border-radius: 20px;
+}
 .bajo{
     width: 100%;
-    height: 70px;
+    height: fit-content;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -290,188 +220,36 @@ i{
 .bajo p {
     color: white;
     font-size: 2rem;
-    font-family: 'Lora', serif;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding: 20px;
+    font-family: 'Montserrat', serif; 
 }
 .bajo span{
     color: gainsboro;
     font-size: 2.5rem;
     font-weight: bolder;
-    font-family: 'Lora', serif;
+    font-family: 'Lobster';
 }
-@media only screen and (max-width : 500px) {
-    *{
-        font-size: 8px;
+@media only screen and (min-width : 800px) {
+    html{
+        font-size: 18px;
     }
     .title{
-        width: 100%;
-    }
-    .title h1{
-        font-size: 4.5rem;
-    }
-    .text{
         padding: 0px;
-        margin: 0px;
-        width: 100%;
     }
-    .letter-container{
-        width: 100%;
+}
+@media only screen and (min-width : 1500px) {
+    html{
+        font-size: 28px;
     }
-    .letter-container h2{
-        height: fit-content;
-        width: 100%;
-        font-size: 3.5rem;
-        padding-left: 10px;
-        padding-right: 10px;
+    .secondvh article div p{
+        font-size: 27px;
+        text-align: justify;
     }
-    .letter-container p{
-        width: 100%;
-        font-size: 2.5rem;
-        padding-left: 10px;
-        padding-right: 10px;
-    }
-    .letter-container .dowload{
+    .title{
         padding: 0px;
-        width: 100%;
     }
-    .text{
-     flex-direction: column;
-    }
-    .mockup-container{
-        width: 100%;
-        margin-right: none;
-    }
-    .mockup2{
-        width: 500px;
-        height: auto;
-        display: inline-block;
-    }
-    .mockup1{
-        display: none;
-    }
-    .dowload{
-        width: 100%;
-        height: 70px;
-    }
-    .ventajas {
-        justify-content: space-between;
-    }
-    .ventajas div{
-        height: fit-content;
-        padding-top: 20px;
-        padding-bottom: 20px;
-    }
-    .ventajas h2{
-        padding: 10px;
-    }
-    .opiniones{
-        height: fit-content;
-    }
-    }
-    .opiniones label a{
-        font-size: 2rem;
-        text-decoration: none;
-    }
-    @media only screen and (max-height : 500px){
-        
-        .title h1{
-            font-size: 4rem;
-            letter-spacing: 3px;
-        }
-        .text{
-            display: flex;
-            flex-direction: row;
-            height: fit-content;
-            padding: 0px;
-            width: 100%;
-            z-index: 999;
-        }
-        .letter-container{
-            width: 50%;
-            padding-top: 20px;
-        }
-        .letter-container h2{
-            width: 100%;
-            height: fit-content;
-        }
-        .letter-container h2{
-            font-size: 4rem;
-        }
-        .letter-container p{
-            width: 100%;
-            padding: 0px;
-            padding-right: 10px;
-            font-size: 1.5rem;
-        }
-        .letter-container .dowload{
-            width: 100%;
-            padding: 0px;
-        }
-        .mockup-container{
-            width: 50%;
-            height: 100%;
-        }
-        .text .mockup1{
-            width: 100%
-        }
+}
 
-        .socialmedia1{
-            display: none;
-        }
-        .socialmedia2{
-            width: 300px;
-            padding-bottom: 20px;
-            height: fit-content;
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            margin: auto;
-            z-index: 999;
-        }
-        .socialmedia2 i{
-            font-size: 3.5rem;
-            color: white;
-            z-index: 999;
-            padding: 10px;
-            cursor: pointer;
-            transition: .5s ease-in-out all;
-        }
-        .socialmedia2 .fa-twitter:hover{
-            background-color: #00acee;
-            padding: 10px;
-        }
-        .socialmedia2 .fa-github:hover{
-            padding: 10px;
-            color: #171515;
-            background-color: white;
-        }
-        .socialmedia2zzzzzzzz .fa-eye:hover{
-            background-color: #171515;
-            padding: 10px;
-        }
-        .ventajas{
-            height: auto;
-        }
-        .ventajas .ventajas-title{
-            padding-top: 20px;
-            padding-bottom: 20px;
-        }
-        .opiniones label a{
-            font-size: 2rem;
-            text-decoration: none;
-        }
-        .mockup-container{
-            width: 50%;
-        }
-    }
-    @media only screen and (max-width : 950px) and (min-width : 700px) {
-        .text{
-            flex-direction: column;
-        }
-        .ventajas{
-            padding-top: 20px;
-            padding-bottom: 20px;
-        }
-        .ventajas div{
-            padding-top: 60px;
-        }
-    }
