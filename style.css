@@ -8,7 +8,7 @@
     --secondcolor: #ffff;
 }
 html{
-    font-size: 10px;
+    font-size: 7px;
     font-family: 'Montserrat', sans-serif;
 }
 h1 , h2{
@@ -234,7 +234,7 @@ h1 , h2{
 }
 @media only screen and (min-width : 800px) {
     html{
-        font-size: 18px;
+        font-size: 14px;
     }
     .title{
         padding: 0px;
@@ -242,7 +242,7 @@ h1 , h2{
 }
 @media only screen and (min-width : 1500px) {
     html{
-        font-size: 28px;
+        font-size: 20px;
     }
     .secondvh article div p{
         font-size: 27px;
