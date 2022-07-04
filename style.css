@@ -120,15 +120,16 @@ h1 , h2{
     transition: 0.5s;
     cursor: pointer;
 }
-.socialmedia .github:hover{
-    color: #171515;
+.fa-linkedin:hover{
+    color:  #0e76a8;
+}
+.fa-youtube:hover{
+    color: #c4302b;
 }
 .socialmedia .twitter:hover{
     color: #00acee;
 }
-.socialmedia .pago:hover{
-    color: black;
-}
+
 .secondvh{
     width: 100%;
     height: fit-content;
